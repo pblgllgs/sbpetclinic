@@ -1,6 +1,7 @@
 package com.pblgllgs.sbpetclinic.bootstrap;
 
 import com.pblgllgs.sbpetclinic.model.Owner;
+import com.pblgllgs.sbpetclinic.model.Pet;
 import com.pblgllgs.sbpetclinic.model.Vet;
 import com.pblgllgs.sbpetclinic.service.OwnerService;
 import com.pblgllgs.sbpetclinic.service.VetService;
@@ -54,7 +55,6 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(vet2);
 
         System.out.println("Loaded vets...");
-
 
     }
 }
