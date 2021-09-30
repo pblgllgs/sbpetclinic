@@ -1,7 +1,6 @@
 package com.pblgllgs.sbpetclinic.service.map;
 
 import com.pblgllgs.sbpetclinic.model.Pet;
-import com.pblgllgs.sbpetclinic.service.CrudService;
 import com.pblgllgs.sbpetclinic.service.PetService;
 import org.springframework.stereotype.Service;
 
