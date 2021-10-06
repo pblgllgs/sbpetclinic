@@ -1,6 +1,5 @@
 package com.pblgllgs.sbpetclinic.service.springdatajpa;
 
-import com.pblgllgs.sbpetclinic.model.Owner;
 import com.pblgllgs.sbpetclinic.model.Vet;
 import com.pblgllgs.sbpetclinic.repository.VetRepository;
 import com.pblgllgs.sbpetclinic.service.VetService;
