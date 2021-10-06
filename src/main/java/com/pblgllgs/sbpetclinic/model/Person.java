@@ -1,8 +1,18 @@
 package com.pblgllgs.sbpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+import javax.validation.constraints.NotBlank;
+
+@MappedSuperclass
 public class Person extends BaseEntity {
 
+    @Column(name = "first_name")
+    @NotBlank
     private String firtName;
+
+    @Column(name = "last_name")
+    @NotBlank
     private String lastName;
 
     public String getFirtName() {
