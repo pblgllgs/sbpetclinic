@@ -1,7 +1,7 @@
 package com.pblgllgs.sbpetclinic.repository;
 
-import com.pblgllgs.sbpetclinic.model.Pet;
+import com.pblgllgs.sbpetclinic.model.Vet;
 import org.springframework.data.repository.CrudRepository;
 
-public interface VetRepository extends CrudRepository<Pet,Long> {
+public interface VetRepository extends CrudRepository<Vet,Long> {
 }
