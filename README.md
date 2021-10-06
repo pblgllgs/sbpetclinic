@@ -1,2 +1,2 @@
 # sbpetclinic
-pet clinic course
+pet clinic spring course
