@@ -1,11 +1,26 @@
 package com.pblgllgs.sbpetclinic.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotBlank;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @MappedSuperclass
 public class Person extends BaseEntity {
+
+    public Person(Long id, String firtName, String lastName) {
+        super(id);
+        this.firtName =firtName;
+        this.lastName =lastName;
+    }
 
     @Column(name = "first_name")
     @NotBlank
@@ -15,19 +30,5 @@ public class Person extends BaseEntity {
     @NotBlank
     private String lastName;
 
-    public String getFirtName() {
-        return firtName;
-    }
 
-    public void setFirtName(String firtName) {
-        this.firtName = firtName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }
