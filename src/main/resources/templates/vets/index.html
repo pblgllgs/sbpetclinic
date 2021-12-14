@@ -13,6 +13,7 @@
         <th>ID</th>
         <th>First name</th>
         <th>Last name</th>
+        <th>Specialities</th>
     </tr>
     </thead>
     <tbody>
@@ -20,6 +21,12 @@
         <td th:text="${vet.getId()}"></td>
         <td th:text="${vet.getFirtName()}"></td>
         <td th:text="${vet.getLastName()}"></td>
+        <td>
+            <span   th:each="specialty : ${vet.specialities}"
+                    th:text="${specialty.description + ''}"></span>
+            <span th:if="${vet.specialities?.size == 0}">none</span>
+
+        </td>
     </tr>
     </tbody>
 </table>
